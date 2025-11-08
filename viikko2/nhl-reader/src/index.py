@@ -1,7 +1,9 @@
-from player import Player
+"""Ei importteja"""
+#from player import Player
 
 def main():
-    pass
+    """Emme tee mitään"""
+    #pass
 
 if __name__ == "__main__":
     main()
