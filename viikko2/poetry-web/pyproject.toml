@@ -1,0 +1,25 @@
+[project]
+name = "poetry-web"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "TuomasHirv",email = "hirvonentume@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "sqlalchemy (>=2.0.44,<3.0.0)",
+    "fastapi (>=0.121.0,<0.122.0)"
+]
+
+[tool.poetry]
+packages = [{include = "poetry_web", from = "src"}]
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pytest (>=8.4.2,<9.0.0)"
+]
